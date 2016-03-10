@@ -59,6 +59,10 @@ body {
   height: $size-navbar;
   padding: $top-navbar 0 0 210px;
   border-bottom: 1px solid $first-blue;
+  img {
+    margin: -15px 0 0 390px;
+    height: 90px;
+  }
 }
 
 /* NAVBAR > ZONE CONNEXION */
@@ -117,6 +121,7 @@ body {
   p {
     font-size: $p-size;
     color: $color-p;
+    line-height: 35px;
   }
 }
 

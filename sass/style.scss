@@ -2,7 +2,8 @@
 $first-blue: #036c81;
 /*$second-blue: #036c81;*/
 $yellow-principal: #cccc33;
-$background-color-principal: #f7f7f7;
+$color-grey: #f7f7f7;
+$font-principal: 'Raleway', sans-serif;
 
 /* NAVBAR */
 $size-navbar: 90px;
@@ -26,7 +27,6 @@ $top-second-content: 10px;
 /* FOOTER */
 $size-footer: 200px;
 $size-font-footer: 15px;
-$color-font-footer: white;
 $size-ul: 140px;
 
 /* ##################################
@@ -39,7 +39,8 @@ $size-ul: 140px;
 }
 
 body {
-  background-color: $background-color-principal;
+  background-color: $color-grey;
+  font-family: $font-principal;
 }
 
 /* NAVBAR */
@@ -65,12 +66,12 @@ body {
   height: $size-navbar;
   padding: 0;
   background-color: $first-blue;
-  border-left: 1px solid $background-color-principal;
+  border-left: 1px solid $color-grey;
 }
 
 .connexion {
   a {
-    color: $background-color-principal;
+    color: $color-grey;
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -82,7 +83,7 @@ body {
 
 .connexion {
   a:hover {
-    background-color: $background-color-principal;
+    background-color: $color-grey;
     color: $first-blue;
     border: 1px solid $first-blue;
     transition: 0.5s;
@@ -151,7 +152,7 @@ body {
     background-color: $first-blue;
     transition: 0.5s;
     i {
-      color: white;
+      color: $color-grey;
     }
   }
 }
@@ -175,6 +176,14 @@ body {
 .content-registration {
   height: $size-content-registration;
   padding: $top-second-content 0 0 0;
+  margin: 0 0 60px 0;
+}
+
+/* CONTENT TITLE */
+.title-registration {
+  h3 {
+    color: $first-blue;
+  }
 }
 
 /* CONTENT LOGO */
@@ -193,20 +202,22 @@ body {
 .button-registration {
   height: 20%;
   padding: 10px 0 0 0;
+  margin: 10px 0 0 0;
   a {
     padding: 20px 55px;
     text-decoration: none;
-    color: white;
+    color: $color-grey;
     background-color: $first-blue;
     border-radius: 10px;
+    font-size: 15px;
   }
 }
 
 .content-registration {
   a:hover {
     border: 1px solid $first-blue;
+    background-color: $color-grey;
     color: $first-blue;
-    background-color: $background-color-principal;
     transition: 0.5s;
   }
 }
@@ -216,7 +227,7 @@ body {
 
 /* BORDER FOOTER */
 .footer-border-right {
-  border-right: 1px solid $background-color-principal; 
+  border-right: 1px solid $color-grey;
 }
 
 /* FOOTER */
@@ -237,7 +248,7 @@ body {
       margin: 15px 0;
       a {
         font-size: $size-font-footer;
-        color: $color-font-footer;
+        color: $color-grey;
         text-decoration: none;
       }
     }
@@ -250,6 +261,6 @@ body {
     margin-top: 17px;
     padding-left: 30px;
     font-size: $size-font-footer;
-    color: $color-font-footer;
+    color: $color-grey;
   }
 }

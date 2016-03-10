@@ -1,11 +1,11 @@
 /* VARIABLES */
-/*$second-blue: #036c81;*/
+/*$second-blue: #036c81; */
 /* NAVBAR */
 /* FIRST CONTENT HOME */
 /* SECOND CONTENT HOME */
 /* FOOTER */
 /* ##################################
-################################## */
+ *################################## */
 /* CLASSE GLOBALE */
 .border-right {
   border-right: 1px solid #036c81; }
@@ -55,8 +55,15 @@ body {
   border: 1px solid #036c81;
   transition: 0.5s; }
 
+/* NAVBAR MOBILE */
+@media screen and (max-width: 768px) {
+  .logo {
+    padding: 0; }
+
+  .connexion {
+    max-width: 30%; } }
 /* ##################################
-################################## */
+ *################################## */
 /* FIRST CONTENT HOME */
 .first-content {
   padding: 0;
@@ -105,7 +112,7 @@ body {
     color: #f7f7f7; }
 
 /* ##################################
-################################## */
+ *################################## */
 /* ANCRE SUITE */
 #ancre-suite {
   height: 10px; }
@@ -156,7 +163,7 @@ body {
   transition: 0.5s; }
 
 /* ##################################
-################################## */
+ *################################## */
 /* BORDER FOOTER */
 .footer-border-right {
   border-right: 1px solid #f7f7f7; }

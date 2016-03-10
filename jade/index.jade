@@ -1,0 +1,54 @@
+extends layout 
+block content
+
+    //- BEGIN FIRST CONTENT
+    .col-md-12.first-content
+                
+        //- BEGIN CONTENT RECRUTEUR
+        .col-md-6.content-detail.border-right
+            h2 Vous êtes recruteur ?
+            p
+                | Vous recherchez des profils compétents plus que diplômés ? Vous trouverez ce que vous cherchez.
+                
+        //- BEGIN CONTENT DEMANDEUR
+        .col-md-6.content-detail
+            h2 Vous êtes demandeur d'emplois ?
+            p
+                | Vous recherchez un emploi dans le domaine du BTP ? Vous en avez marre d'être jugé sur votre CV et non vos compétences. Rejoignez notre plateforme qui casse les codes.
+                
+        //- BEGIN CONTENT SUITE
+        .col-md-12.content-suite
+            .col-md-12.title-button-suite
+                h3 Commencer
+            .col-md-12.button-suite
+                a(href='#ancre-suite')
+                    i.fa.fa-angle-down
+            
+    //- END CONTENT HOME
+
+         
+    //- ANCRE BUTTON SUITE
+    #ancre-suite.col-md-12
+         
+    //- BEGIN SECOND CONTENT
+    .col-md-12.second-content
+             
+        //- BEGIN CONTENT RECRUTEUR
+        .col-md-6.content-registration
+            .col-md-12.title-registration
+                h3 Recruteur
+            .col-md-12.logo-registration.border-right
+                img(src='img/img-recruteur.jpg', alt='Recruteur', title='Recruteur')
+            .col-md-12.button-registration
+                a(href='#') Inscrivez-vous
+                
+        //- BEGIN CONTENT DEMANDEUR
+        .col-md-6.content-registration
+            .col-md-12.title-registration
+                h3 Demandeur d'emplois
+            .col-md-12.logo-registration
+                img(src='img/img-demandeur.jpg', alt="Demandeur d'emplois", title="Demandeur d'emplois")
+            .col-md-12.button-registration
+                a(href='inscription-demandeur.html') Inscrivez-vous
+            
+    //- END SECOND CONTENT

@@ -1,0 +1,49 @@
+/* NAVBAR */
+.navbar-head
+  height: $size-navbar
+  padding: 0
+  border-radius: 0
+  border: none
+  text-align: center
+  margin-bottom: 20px
+  background-color: $first-blue
+
+/* NAVBAR > ZONE LOGO */
+.logo
+  height: $size-navbar
+  padding: $top-navbar 0 0 210px
+  border-bottom: 1px solid $first-blue
+  img
+    margin: -15px 0 0 390px
+    height: 90px
+
+/* NAVBAR > ZONE CONNEXION */
+.connexion
+  height: $size-navbar
+  padding: 0
+  background-color: $first-blue
+  border-left: 1px solid $color-grey
+
+.connexion
+  a
+    color: $color-grey
+    font-size: 20px
+    text-decoration: none
+    display: block
+    width: 100%
+    height: 100%
+    padding-top: $top-navbar
+
+.connexion
+  a:hover
+    background-color: $color-grey
+    color: $first-blue
+    border: 1px solid $first-blue
+    transition: 0.5s
+
+/* NAVBAR MOBILE */
+@media screen and (max-width: 768px)
+  .logo
+    padding: 0
+  .connexion
+    max-width: 30%

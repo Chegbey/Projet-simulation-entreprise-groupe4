@@ -1,11 +1,19 @@
-/* VARIABLES */
-
+/* VARIABLES GLOBALES */
 $first-blue: #036c81
-
-/*$second-blue: #036c81;
-$yellow-principal: #cccc33
 $color-grey: #f7f7f7
 $font-principal: "Raleway", sans-serif
+
+/* MIXIN */ 
+=box-shadow($param1, $param2, $param3, $param-color) 
+	-moz-box-shadow: $param1 $param2 $param3 $param-color
+	-webkit-box-shadow: $param1 $param2 $param3 $param-color
+	-o-box-shadow: $param1 $param2 $param3 $param-color
+	box-shadow: $param1 $param2 $param3 $param-color
+
+=border-radius($param-radius)
+	-moz-border-radius: $param-radius;
+	-webkit-border-radius: $param-radius;
+	border-radius: $param-radius;
 
 /* NAVBAR */
 $size-navbar: 90px
@@ -30,3 +38,7 @@ $top-second-content: 10px
 $size-footer: 200px
 $size-font-footer: 15px
 $size-ul: 140px 
+
+/* FORMULAIRE INSCRIPTION */ 
+$background-formulaire: #c9c9c9
+

@@ -9,7 +9,7 @@ var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 
 gulp.task('sass', function () {
-    gulp.src('./sass/**/*.sass')
+    gulp.src('./sass/*.sass')
         // .pipe(plumber())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         //   .pipe(plumber.stop())
@@ -32,7 +32,7 @@ gulp.task('sass', function () {
 
 
 gulp.task('jade', function () {
-    return gulp.src('./jade/index.jade')
+    return gulp.src('./jade/*.jade')
         .pipe(jade())
         .pipe(gulp.dest('./'))
 });
@@ -50,7 +50,7 @@ gulp.task('imagemin', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('./sass/**/*.sass', ['sass']);
+    gulp.watch('./sass/*.sass', ['sass']);
     gulp.watch('./jade/*.jade', ['jade']);
     gulp.watch('./js/*.js', ['uglify']);
 });

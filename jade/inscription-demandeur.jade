@@ -1,19 +1,76 @@
 extends layout 
-block content 
+block content
 
-	//- BEGIN CONTENT FORMULAIRE 
-	.col-md-12.espace-formulaire
+  //- TITLE FORMULAIRE
+  .col-md-12.title-formulaire-demandeur
+    h3 Informations Personnelles
+    p Veillez à bien remplir tous les champs
 
-		//- TITLE FORMULAIRE
-    	.col-md-12.title-formulaire-demandeur
-    		h3 Informations Personnelles
+    //- BEGIN CONTENT FORMULAIRE 
+  .col-md-offset-1.col-md-10.espace-formulaire
 
-    	//- CONTENT FORMULAIRE 
-    	.col-md-12.content-formulaire
-    		form 
-    			
+        //- BEGIN FORMULAIRE 
+        form(action='#', method="post", id="form_1")
+
 
         
+          //- CONTENT FORMULAIRE LEFT
+          .col-md-6.content-formulaire-left
+
+            //- CHAMPS DU FORMULAIRE 
+            ul
+            
+              li
+                label(for='name') Nom :
+                input(name='nom', type='text' placeholder='Nom')
+
+          
+              li
+                label(for='name') Prénom :
+                input(name='prenom', type='text' placeholder='Prénom')
+
+          
+              li
+                label(for='Adresse') Adresse :
+                input(name='Adresse', type='text' placeholder='Adresse')
+
+              li
+                label(for='ville') Ville :
+                input(name='ville', type='text' placeholder='Ville')
+
+              li
+                label(for='code_postal') Code Postal :
+                input(name='code_postal', type='text' placeholder='Code Postal')
+
+          //- CONTENT FORMULAIRE RIGHT 
+          .col-md-6.content-formulaire-right
+
+            //- CHAMPS FORMULAIRE
+            ul
+              li
+                label(for='telephone') Téléphone :
+                input(name='telephone', type='number' placeholder='Téléphone')
+
+              li
+                label(for='email') E-mail :
+                input(name='email', type='email' placeholder='E-mail')
+
+              li
+                label(for='mot_de_passe') Mot de passe :
+                input(name='mot_de_passe', type='password' placeholder='Mot de passe')
+
+              li
+                label(for='mot_de_passe2') Confirmation mot de passe :
+                input(name='mot_de_passe2', type='password' placeholder='Mot de passe')
+
+          //- BUTTON VALIDATION
+          .col-md-offset-2.col-md-8.button-validation
+
+            //- BUTTON RETOUR
+            a(href="index.html") Retour
+            input(type='submit', value="Suivant", form="form-1") 
 
 
-    
+
+
+
